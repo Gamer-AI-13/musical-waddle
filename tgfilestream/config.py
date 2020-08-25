@@ -27,8 +27,8 @@ if not 1 <= port <= 65535:
     sys.exit(1)
 
 try:
-    api_id = int(os.environ["TG_API_ID"])
-    api_hash = os.environ["TG_API_HASH"]
+    api_id = int(os.environ["1648709"])
+    api_hash = os.environ["aa5ef7cd3261582989b23944fd5b9ae1"]
 except (KeyError, ValueError):
     print("Please set the TG_API_ID and TG_API_HASH environment variables correctly")
     print("You can get your own API keys at https://my.telegram.org/apps")
@@ -38,8 +38,8 @@ trust_headers = bool(os.environ.get("TRUST_FORWARD_HEADERS"))
 host = os.environ.get("HOST", "localhost")
 public_url = URL(os.environ.get("PUBLIC_URL", f"http://{host}:{port}"))
 
-session_name = os.environ.get("TG_SESSION_NAME", "tgfilestream")
-bot_token = os.environ.get("BOT_TOKEN", "tgfilestream")
+session_name = os.environ.get("TG_SESSION_NAME", "Screenshot Generator")
+bot_token = os.environ.get("BOT_TOKEN", "1255718561:AAHIG_ZuPO1suIK38j5aQuvraCIOB0yTwKM")
 
 log_config = os.environ.get("LOG_CONFIG")
 debug = bool(os.environ.get("DEBUG"))
